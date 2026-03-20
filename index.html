@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Факты о животных</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #76c044 0%, #4a9a2f 100%);
+      color: #fff;
+      padding: 50px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .animals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .animal {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 15px;
+      padding: 20px;
+      min-height: 200px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .animal:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .animal h2 {
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+
+    .turtle h2, .turtle p { color: #00ffcc; }
+    .crocodile h2, .crocodile p { color: #00ff00; }
+    .capybara h2, .capybara p { color: #ffcc00; }
+    .rabbit h2, .rabbit p { color: #ff99ff; }
+
+    .animal p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Факты о животных</h1>
+
+  <div class="animals">
+
+    <div class="animal turtle">
+      <h2>Черепахи</h2>
+      <p>
+        - Черепахи живут более 100 лет.<br>
+        - Они могут дышать через заднюю часть тела под водой.<br>
+        - У черепах нет зубов, но есть твердый клюв.<br>
+        - Передвигаются медленно, но могут хорошо плавать.
+      </p>
+    </div>
+
+    <div class="animal crocodile">
+      <h2>Крокодилы</h2>
+      <p>
+        - Крокодилы существуют более 200 миллионов лет.<br>
+        - Могут жить до 70 лет.<br>
+        - Отличные пловцы и очень быстрые на коротких дистанциях.<br>
+        - У крокодилов мощные челюсти и множество зубов.
+      </p>
+    </div>
+
+    <div class="animal capybara">
+      <h2>Капибары</h2>
+      <p>
+        - Капибары — самые крупные грызуны в мире.<br>
+        - Живут в Южной Америке возле рек и болот.<br>
+        - Очень социальные животные, живут группами до 20 особей.<br>
+        - Отличные пловцы, могут задерживать дыхание до 5 минут.
+      </p>
+    </div>
+
+    <div class="animal rabbit">
+      <h2>Кролики</h2>
+      <p>
+        - Кролики живут около 8–12 лет.<br>
+        - Могут развивать скорость до 60 км/ч.<br>
+        - У них острые зубы, которые постоянно растут.<br>
+        - Очень социальные, общаются при помощи различных звуков.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
